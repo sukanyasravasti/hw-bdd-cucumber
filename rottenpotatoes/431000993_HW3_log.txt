@@ -44,7 +44,7 @@ Feature: display list of movies filtered by MPAA rating
   Scenario: all ratings selected                     # features/filter_movie_list.feature:48
       # see assignment
     When I check the following ratings: G PG PG-13 R # features/step_definitions/movie_steps.rb:34
-    Then I should see all the movies                 # features/step_definitions/movie_steps.rb:45
+    Then I should see all the movies                 # features/step_definitions/movie_steps.rb:46
 
 Feature: display list of movies sorted by different criteria
   As an avid moviegoer
@@ -76,7 +76,8 @@ Feature: display list of movies sorted by different criteria
     When I follow "Release Date"                            # features/step_definitions/web_steps.rb:56
       # your steps here
     Then I should see "The Terminator" before "Aladdin"     # features/step_definitions/movie_steps.rb:22
+    Then I should see "Aladdin" before "The Help"           # features/step_definitions/movie_steps.rb:22
 
 4 scenarios (4 passed)
-32 steps (32 passed)
-0m0.334s
+33 steps (33 passed)
+0m0.379s

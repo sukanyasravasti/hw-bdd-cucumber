@@ -31,6 +31,7 @@ Scenario: sort movies in increasing order of release date
   When I follow "Release Date"
   # your steps here
   Then I should see "The Terminator" before "Aladdin"
+  Then I should see "Aladdin" before "The Help"
 
   
 
